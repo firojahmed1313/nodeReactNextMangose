@@ -19,7 +19,6 @@ const mongoose = require('mongoose');
 
 const uri = "mongodb+srv://newgitpods:VL6eb0rHhdZJ1gv0@mdfirojahmed.chpjhjr.mongodb.net/testDetabase?retryWrites=true&w=majority";
 
-//const DB_URL:"mongodb://0.0.0.0:27017/byenow";
 
 mongoose.connect(uri).then(()=>{
     console.info("connected");
