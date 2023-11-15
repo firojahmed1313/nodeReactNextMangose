@@ -35,16 +35,22 @@ onSnapshot(fatchdata , (snapshot)=>{
     })))
 })   // in useeffect in fuction
 
+// fatch data using id 
+import { getDoc,doc ,collection } from "firebase/firestore";
 
+const fatchdatauseing_id = collection(db , "collection_name");
+    
+    const iddata = doc(db , "collection_name", id);
+  //in useeffect in fuction
+ getDoc(iddata).then((doc)=> setuseeffect_id_data(doc.data()));
 
 // fatch data end 
 
 
 // delete data 
-
-
-
-
+import { doc ,deleteDoc } from "firebase/firestore";
+const deletedata = doc(db , "collection_name", id);  // in function 
+await deleteDoc(deletedata);
 // delete data end 
 
 
