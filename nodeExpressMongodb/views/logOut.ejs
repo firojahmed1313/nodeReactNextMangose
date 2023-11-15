@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGOUT</title>
+    <style>
+      body {
+        background-color: rgb(145, 164, 179);
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <h1>Welcome Mr <%= locals.name %></h1><br>
+    <h1>Your Email is  <%= locals.email %></h1><br>
+    <form action="/logOut" method="GET">
+      
+      <button onclick="logout">LogOut</button>
+    </form>
+
+    <script>
+        function logout (){
+            
+        }
+    </script>
+  </body>
+</html>
