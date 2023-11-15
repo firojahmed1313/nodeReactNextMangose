@@ -8,7 +8,19 @@ import { auth } from "./Firebase";
 import { GoogleAuthProvider,signInWithPopup } from "firebase/auth";
 
 // signin end 
+// sign in login data from fire base 
 
+import { getAuth } from "firebase/auth";
+ const authDetails = getAuth();
+
+  authDetails?.currentUser.displayName;
+  authDetails?.currentUser.email;
+  authDetails?.currentUser.phoneNumber;
+  authDetails?.currentUser.photoURL;
+
+  authDetails.signOut(); // in function
+
+// end credential details
 // add data
 
 import {  db} from "./Firebase";
